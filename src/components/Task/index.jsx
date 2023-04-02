@@ -1,11 +1,13 @@
+import { BsFillCheckCircleFill } from "react-icons/bs";
 import style from "./task.module.css"
 import { FaTrash } from "react-icons/fa"
 
-function Task({ task }){
+function Task({ task, onComplete}){
+
     return(
         <div className={style.task}>
-            <button className={style.checkContainer}>
-                <div />
+            <button className={style.checkContainer} onClick={() => onComplete(task.id)}>
+                {task.isCompleted ? <BsFillCheckCircleFill/> : <div />}
             </button>
 
             <p>{task.title}</p>
