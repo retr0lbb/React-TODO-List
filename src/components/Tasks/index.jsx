@@ -12,7 +12,7 @@ function Tasks({tasks, onComplete , onRemove}){
                     <span>{taskQuantiti}</span>
                 </div>
                 <div>
-                    <p className={style.textPurple}>Completed taks</p>
+                    <p className={style.textPurple}>Completed tasks</p>
                     <span>{completedTasks} of {taskQuantiti}</span>
                 </div>
             </header>

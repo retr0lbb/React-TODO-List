@@ -10,6 +10,9 @@ function App() {
   function loadSavedTasks() {
     const savedTasks = localStorage.getItem(LOCAL_STORAGE_KEY);
     console.log(savedTasks)
+    if(savedTasks){
+      setTasks(JSON.parse(savedTasks))
+    }
   }
 
   useEffect(()=>{
