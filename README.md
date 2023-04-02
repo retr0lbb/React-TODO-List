@@ -16,5 +16,3 @@ the link to the video is this
 # The future about this project:
 
 In the future, I plan to make some changes to this project. First of all, I will create a tag system to better organize the tasks. After that, I will add a date input to allow the user to set a completion date for each task. Finally, I will refactor the code to work with `React-Native` and port the app to mobile devices. I will also add some widgets to make it more user-friendly.
-
-
