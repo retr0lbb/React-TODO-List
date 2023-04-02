@@ -10,7 +10,7 @@ function Task({ task, onComplete}){
                 {task.isCompleted ? <BsFillCheckCircleFill/> : <div />}
             </button>
 
-            <p>{task.title}</p>
+            <p className={task.isCompleted ? style.textCompleted :''}>{task.title}</p>
 
             <button className={style.deleteButton}>
                 <FaTrash size={20}></FaTrash>
