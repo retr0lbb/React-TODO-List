@@ -29,6 +29,10 @@ function App() {
     })
     setTasks(newTasks);
   }
+  function removeTaskById(taskId){
+    const newTasks = tasks.filter(task => task.id != taskId )
+    setTasks(newTasks)
+  }
   console.log(tasks);
 
   return (
@@ -36,6 +40,7 @@ function App() {
     <Header onAddTask={addTask}/>
     <Tasks
       tasks = {tasks}
+      onRemove = {removeTaskById}
       onComplete={toggleTaskCompletedById}
     />
     </>

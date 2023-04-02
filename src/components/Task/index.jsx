@@ -2,7 +2,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import style from "./task.module.css"
 import { FaTrash } from "react-icons/fa"
 
-function Task({ task, onComplete}){
+function Task({ task, onComplete, onRemove}){
 
     return(
         <div className={style.task}>
@@ -12,7 +12,7 @@ function Task({ task, onComplete}){
 
             <p className={task.isCompleted ? style.textCompleted :''}>{task.title}</p>
 
-            <button className={style.deleteButton}>
+            <button className={style.deleteButton} onClick={() => onRemove(task.id)}>
                 <FaTrash size={20}></FaTrash>
 
             </button>

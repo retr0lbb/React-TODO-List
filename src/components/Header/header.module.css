@@ -1,5 +1,9 @@
+:root{
+  --bg-collor: #0D0D0D;
+}
+
 .header {
-    background: #0D0D0D;
+    background: linear-gradient(180deg, var(--bg-collor), #14110C);
     display: flex;
     align-items: center;
     justify-content: center;
