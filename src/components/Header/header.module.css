@@ -3,7 +3,7 @@
 }
 
 .header {
-    background: linear-gradient(180deg, var(--bg-collor), #14110C);
+    background: var(--bg-collor);
     display: flex;
     align-items: center;
     justify-content: center;
