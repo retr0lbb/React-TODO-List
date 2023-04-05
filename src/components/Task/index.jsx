@@ -12,6 +12,10 @@ function Task({ task, onComplete, onRemove}){
 
             <p className={task.isCompleted ? style.textCompleted :''}>{task.title}</p>
 
+            <div>
+                
+            </div>
+
             <button className={style.deleteButton} onClick={() => onRemove(task.id)}>
                 <FaTrash size={20}></FaTrash>
 
